@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,500;0,700;1,200&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins', sans-serif;
+}
+section
+{
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	padding: 100px;
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	background: #fff;
+}
+header
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header .logo
+{
+	position: relative;
+	max-width: 80px;
+}
+header ul
+{
+	position: relative;
+	display: flex;
+}
+header ul li
+{
+	list-style: none;
+}
+header ul li a
+{
+	display: inline-block;
+	color: #333;
+	font-weight: 400;
+	margin-left: 40px;
+	text-decoration: none;
+}
+.content
+{
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+}
+.content .textBox
+{
+	position: relative;
+	max-width: 900px;
+}
+.content .textBox h2
+{
+	color:rgb(0, 0, 0);
+	font-size: 3em;
+	line-height: 1em;
+	font-weight:600 ;
+	margin-top: 2px;
+	margin-block: 20px;
+}
+.content .textBox h2 span
+{
+	color:#0f0f0f;
+	font-size: 1,2em;
+	font-weight: 600;
+}
+.content .textBox p
+{
+	color: #333;
+	font-weight: 100;
+	line-height: 19px;
+}
+.content .textBox a
+{
+	display: inline-block;
+	margin-top: 20px;
+	padding: 8px 20px;
+	background: #b8b8b8;
+	color: rgb(0, 0, 0);
+	border-radius: 40px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+.content .imgBox
+{
+	width: 1000px;
+	display: flex;
+	justify-content: flex-end;
+	padding-right:  0px;
+	margin-top: 50px;
+}
+.content .imgBox img
+{
+	max-width: 400px;
+}
+.sci
+{
+	position: absolute;
+	top: 50%;
+	right: 30px;
+	transform: translateY(-50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	max-width: 20px;
+}
+.sci li
+{
+	list-style: none;
+}
+.sci li a
+{
+	display: inline-block;
+	margin: 5px 0;
+	transform: scale(0.6)
+}
+:root{
+    --theme-col: #ece6e650;
+}
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+footer{
+    background-color: #202020;
+}
+.f-item-con{
+    padding: 1.5rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 2rem;
+}
+footer .app-name{
+    color: white;
+    border-left: 4px solid var(--theme-col);
+    padding-left: 1.5rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 500;
+}
+.app-name .app-initial{
+    color: var(--theme-col);
+}
+footer .app-info p{
+    color: white;
+    padding-left: 1.65rem;
+}
+
+footer .footer-title{ 
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: white;
+    border-left: 4px solid var(--theme-col);
+    padding-left: 1.5rem;
+    height: fit-content;
+}
+footer ul{ 
+    padding-left: 1.75rem;
+    color: white;
+    font-size: 0.875rem/* 14px */;
+    line-height: 1.25rem;
+    margin-top: .5rem;
+}
+footer ul li{ 
+    margin: .25rem 0;
+    cursor: pointer;
+    color: #d4d4d4;
+    width: fit-content;
+}
+footer ul li:hover{
+    color: white;
+}
+footer .cr-con{
+    background-color: #000000;
+    color: white;
+    padding: 1rem 4rem;
+    text-align: center;
+}
+.g-i-t{
+    display: grid;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.g-i-t form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+form .g-inp{
+    padding: .25rem .5rem;
+    font-size: 16px;
+}
+.g-inp textarea{
+    height: 150px;
+}
+.f-btn{
+    padding: .25rem 1rem;
+    background-color: var(--theme-col);
+    border-radius: 1.25rem;
+    font-size: 16px;
+    color: white;
+    font-weight: 300;
+}
